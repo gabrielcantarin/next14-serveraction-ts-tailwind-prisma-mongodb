@@ -1,12 +1,10 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
@@ -21,10 +19,11 @@ const config: Config = {
           success: "#23b893",
           warning: "#f79926",
           error: "#ea535a",
-          body: { "background-color": "#e3e6e6", },
+          body: {
+            "background-color": "#e3e6e6",
+          },
         },
-      }
+      },
     ],
   },
-}
-export default config
+};
