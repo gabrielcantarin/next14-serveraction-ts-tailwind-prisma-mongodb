@@ -10,7 +10,7 @@ datasource db {
 model Product {
   id          String    @id @default(auto()) @map("_id") @db.ObjectId
   description String
-  image       String
+  imageUrl    String
   name        String
   price       Int
   createdAt   DateTime  @default(now())
